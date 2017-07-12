@@ -30,6 +30,8 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-apollo": "^1.4.3",
-    "react-dom": "^15.6.1"
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.6.1",
+    "react-svg-gauge": "^1.0.5"
   }
 }

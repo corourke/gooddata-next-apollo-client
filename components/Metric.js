@@ -19,18 +19,23 @@ function Metric({data: {loading, error, metric}}) {
             display: inline;
             margin-bottom: 3px;
             margin-top: 3px;
+            font-weight: 300;
           }
           p {
             display: inline;
+            font-weight: 200;
+            font-variant: all-small-caps;
           }
           div {
-            text-align: center;
-            margin-right: 20px;
+            background-color: #5D8CEF;
+            color: white;
+            text-align: left;
             border: #999;
             border-style: solid;
             border-radius: 6px;
             border-width: 1px;
-            padding: 10px;
+            padding: 10px 20px;
+            margin: 10px 20px;
             float: left;
           }
         `}</style>
@@ -64,3 +69,12 @@ export default graphql(metric, {
         data
     })
 })(Metric)
+
+
+
+// I would like to use the gooddata number formatter instead.
+// import number from '@gooddata/numberjs'
+// export const formatterForMetric = (metric) => (value) =>
+//     number.numberFormat(value, metric.format)
+// const formatter = formatterForMetric(metric.data, "#,###.#")
+// console.log(metric.data, metric.format, formatter(metric.data))
