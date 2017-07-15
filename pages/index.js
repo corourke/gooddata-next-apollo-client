@@ -10,6 +10,6 @@ export default withData((props) => (
         <Header pathname={props.url.pathname}/>
         <Metric metricId="adlts78WhfEv"/>
         {/*<Metric metricId="aa5QHBqTgCEo"/>*/}
-        {/*<Gauge metricId="aajLdj1Wejme" color="#5D8CEF"/>*/}
+        <Gauge metricId="aajLdj1Wejme" color="#5D8CEF"/>
     </App>
 ))

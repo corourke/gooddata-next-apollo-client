@@ -28,5 +28,11 @@ export default withData((props) => (
                 completely initialized.
             </p>
         </article>
+        <style jsx global>{`
+            article {
+            margin: 20px;
+            padding: 0px 0px;
+        }
+        `}</style>
     </App>
 ))

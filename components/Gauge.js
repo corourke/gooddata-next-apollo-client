@@ -5,6 +5,7 @@ import SvgGauge from 'react-svg-gauge';
 function Gauge({data: {loading, error, metric}, color}) {
     if (metric) {
         console.log(color);
+        if(error) <ErrorMessage message="Error"/>
         return (
             <div>
                 <SvgGauge value={(metric.data*100).toLocaleString("en", {style: 'decimal', maximumFractionDigits: 1})}
@@ -21,6 +22,7 @@ function Gauge({data: {loading, error, metric}, color}) {
         );
     }
     return <div>Loading</div>
+
 }
 
 const topLabelStyle = {
